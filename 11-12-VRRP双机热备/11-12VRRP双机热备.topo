@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="24B67EF1-8853-4643-BBA8-DDB91A2F484A" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-B4-43-4D" com_port="2000" bootmode="0" cx="490.000000" cy="27.000000" edit_left="492" edit_top="76">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="533A8157-6B5B-4e36-B862-86996954FEA9" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-3B-23-30" com_port="2002" bootmode="0" cx="489.000000" cy="273.000000" edit_left="487" edit_top="327">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="290B94B6-4E2B-46bb-BAD2-B71EC16C968A" name="AC3" poe="0" model="AC6005" settings="" system_mac="00-E0-FC-51-1E-D4" com_port="2004" bootmode="0" cx="715.000000" cy="207.000000" edit_left="742" edit_top="261">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="8" />
+            </slot>
+        </dev>
+        <dev id="5E9B4F24-7443-42cf-A37A-CB7D9A81D461" name="AP2" poe="0" model="AP2050" settings=" -apMac 00-E0-FC-58-22-20 -apSN 2102354483100F41B011" system_mac="00-E0-FC-58-22-20" com_port="2006" bootmode="0" cx="737.000000" cy="607.000000" edit_left="764" edit_top="661">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="5" />
+            </slot>
+        </dev>
+        <dev id="2779FEFF-C312-445d-B1E8-2F35C2840534" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-44-4C-BF" com_port="2001" bootmode="0" cx="489.000000" cy="444.000000" edit_left="516" edit_top="498">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="76DBF545-C1AB-4873-9D9D-1CE37E50FD88" name="AC1" poe="0" model="AC6005" settings="" system_mac="00-E0-FC-F0-5B-25" com_port="2003" bootmode="0" cx="244.000000" cy="213.000000" edit_left="271" edit_top="267">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="8" />
+            </slot>
+        </dev>
+        <dev id="71F91BAE-2A9B-40ee-BC7D-94A9D50BA92B" name="AP1" poe="0" model="AP2050" settings=" -apMac 00-E0-FC-63-40-80 -apSN 2102354483105D59745F" system_mac="00-E0-FC-63-40-80" com_port="2005" bootmode="0" cx="260.000000" cy="601.000000" edit_left="287" edit_top="655">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="5" />
+            </slot>
+        </dev>
+        <dev id="DA7FD6D5-7ECA-4862-B271-4A475BD3065D" name="STA3" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-5B-77-A3  -simsta_check 0 " system_mac="54-89-98-5B-77-A3" com_port="0" bootmode="0" cx="112.000000" cy="574.000000" edit_left="139" edit_top="628">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="24B67EF1-8853-4643-BBA8-DDB91A2F484A" destDeviceID="533A8157-6B5B-4e36-B862-86996954FEA9">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="516.824463" srcBoundRect_Y="97.183411" srcOffset_X="8.000000" srcOffset_Y="-1.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="516.175537" tarBoundRect_Y="256.816589" tarOffset_X="10.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="76DBF545-C1AB-4873-9D9D-1CE37E50FD88" destDeviceID="533A8157-6B5B-4e36-B862-86996954FEA9">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="312.944275" srcBoundRect_Y="250.272064" srcOffset_X="0.000000" srcOffset_Y="-16.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="474.055725" tarBoundRect_Y="289.727936" tarOffset_X="-33.000000" tarOffset_Y="-35.000000" />
+        </line>
+        <line srcDeviceID="533A8157-6B5B-4e36-B862-86996954FEA9" destDeviceID="2779FEFF-C312-445d-B1E8-2F35C2840534">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="516.000000" srcBoundRect_Y="343.183777" srcOffset_X="9.000000" srcOffset_Y="-5.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="516.000000" tarBoundRect_Y="427.816223" tarOffset_X="6.000000" tarOffset_Y="3.000000" />
+        </line>
+        <line srcDeviceID="2779FEFF-C312-445d-B1E8-2F35C2840534" destDeviceID="71F91BAE-2A9B-40ee-BC7D-94A9D50BA92B">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="480.383026" srcBoundRect_Y="495.418610" srcOffset_X="-53.000000" srcOffset_Y="-16.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="322.616974" tarBoundRect_Y="603.581360" tarOffset_X="-42.000000" tarOffset_Y="-22.000000" />
+        </line>
+        <line srcDeviceID="2779FEFF-C312-445d-B1E8-2F35C2840534" destDeviceID="5E9B4F24-7443-42cf-A37A-CB7D9A81D461">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="552.086975" srcBoundRect_Y="494.718475" srcOffset_X="5.000000" srcOffset_Y="-9.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="727.913025" tarBoundRect_Y="610.281555" tarOffset_X="3.000000" tarOffset_Y="-13.000000" />
+        </line>
+        <line srcDeviceID="533A8157-6B5B-4e36-B862-86996954FEA9" destDeviceID="290B94B6-4E2B-46bb-BAD2-B71EC16C968A">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="557.452332" srcBoundRect_Y="287.894470" srcOffset_X="6.000000" srcOffset_Y="6.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="700.547668" tarBoundRect_Y="246.105545" tarOffset_X="-36.000000" tarOffset_Y="-27.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="542" top="164" right="614" bottom="181" content="10.1.10.4" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="647" top="284" right="719" bottom="301" content="10.1.10.3" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="324" top="284" right="396" bottom="301" content="10.1.10.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="272" top="389" right="367" bottom="421" content="管理vlan 10&#x0D;&#x0A;业务vlan 20" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="311" top="926" right="851" bottom="1286" content="VRRP双机热备配置&#x0D;&#x0A;1、配置AC与交换机互通&#x0D;&#x0A;2、配置AC1与AC2互通，通过vlan 101&#x0D;&#x0A;3、配置DHCP服务器&#x0D;&#x0A;4、创建管理VRRP备份组&#x0D;&#x0A;AC1：int vlanif 10&#x0D;&#x0A;     vrrp vrid 1 virtual-ip 10.1.10.4&#x0D;&#x0A;     vrrp vrid 1 priority 120&#x0D;&#x0A;5、创建HSB主备服务&#x0D;&#x0A;AC1：hsb-service 0&#x0D;&#x0A;     service-ip-port local-ip 10.1.101.1 peer-ip 10.1.101.2 local-data&#x0D;&#x0A;6、创建HSB备份组，绑定HSB主备服务及管理VRRP备份组&#x0D;&#x0A;AC1：hsb-group 0&#x0D;&#x0A;     bind-service 0&#x0D;&#x0A;     track vrrp vrid 1 int vlanif 10&#x0D;&#x0A;7、NAC业务及wlan业务绑定HSB备份组&#x0D;&#x0A;     hsb-service-type access-user hsb-group 0&#x0D;&#x0A;     hsb-service-type ap hsb-group 0&#x0D;&#x0A;8、使用双机热备份功能&#x0D;&#x0A;AC1：hsb-group 0&#x0D;&#x0A;     hsb enable&#x0D;&#x0A;9、AC2配置同AC1&#x0D;&#x0A;10、配置AC1及AC2 wlan 业务" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

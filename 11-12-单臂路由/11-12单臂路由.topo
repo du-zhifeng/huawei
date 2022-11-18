@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="CD6522EF-4D9F-4a40-A00E-AB58EB3E8016" name="AR2" poe="0" model="AR3260" settings="" system_mac="00-E0-FC-C4-11-37" com_port="2000" bootmode="0" cx="509.000000" cy="90.000000" edit_left="495" edit_top="144">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="03FE6188-8F8B-4f9d-82FB-1D1C799BF0A2" name="LSW1" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-A2-4E-48" com_port="2001" bootmode="0" cx="511.000000" cy="285.000000" edit_left="538" edit_top="339">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="28BCC7F3-2F97-409a-8801-2732065669A0" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.10.2  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.10.1  -simpc_mac 54-89-98-4E-5E-0D  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-4E-5E-0D" com_port="0" bootmode="0" cx="311.000000" cy="384.000000" edit_left="338" edit_top="438">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="304DE82C-8A9C-4d01-A083-71B66BEBC65D" name="PC2" poe="0" model="PC" settings=" -simpc_ip 192.168.20.2  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.20.1  -simpc_mac 54-89-98-61-24-92  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-61-24-92" com_port="0" bootmode="0" cx="711.000000" cy="385.000000" edit_left="738" edit_top="439">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="03FE6188-8F8B-4f9d-82FB-1D1C799BF0A2" destDeviceID="28BCC7F3-2F97-409a-8801-2732065669A0">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="499.298157" srcBoundRect_Y="331.157410" srcOffset_X="-79.000000" srcOffset_Y="-17.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="376.701843" tarBoundRect_Y="391.842590" tarOffset_X="16.000000" tarOffset_Y="7.000000" />
+        </line>
+        <line srcDeviceID="03FE6188-8F8B-4f9d-82FB-1D1C799BF0A2" destDeviceID="304DE82C-8A9C-4d01-A083-71B66BEBC65D">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="576.624756" srcBoundRect_Y="331.312378" srcOffset_X="18.000000" srcOffset_Y="-14.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="699.375244" tarBoundRect_Y="392.687622" tarOffset_X="-71.000000" tarOffset_Y="13.000000" />
+        </line>
+        <line srcDeviceID="CD6522EF-4D9F-4a40-A00E-AB58EB3E8016" destDeviceID="03FE6188-8F8B-4f9d-82FB-1D1C799BF0A2">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="536.442871" srcBoundRect_Y="160.181488" srcOffset_X="16.000000" srcOffset_Y="0.000000" tarIndex="22" tarBoundRectIsMoved="1" tarBoundRect_X="537.557129" tarBoundRect_Y="268.818512" tarOffset_X="15.000000" tarOffset_Y="-2.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="60" top="40" right="355" bottom="116" content="单臂路由：&#x0D;&#x0A;目的：实现不同vlan之间的互联互通&#x0D;&#x0A;优点：实现不同vlan之间的通信&#x0D;&#x0A;缺点：容易造成网络单点故障" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="270" top="324" right="387" bottom="356" content="vlan 10&#x0D;&#x0A;192.168.10.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="695" top="318" right="812" bottom="350" content="vlan 20 &#x0D;&#x0A;192.168.20.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
